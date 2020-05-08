@@ -1,0 +1,4 @@
+namespace: toolbox
+resources:
+- ns.yaml
+- ds.yaml

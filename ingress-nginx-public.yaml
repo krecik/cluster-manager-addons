@@ -40,3 +40,14 @@ values:
 
   defaultBackend:
     enabled: false
+
+overlayDefinitions:
+  singleInstance:
+    values:
+      controller:
+        replicaCount: 1
+
+  openvpnServer:
+    values:
+      tcp:
+        1194: "openvpn-server/openvpn-server:1194:PROXY"

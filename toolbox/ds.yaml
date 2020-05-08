@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: toolbox
+  labels:
+    k8s-app: toolbox
+spec:
+  updateStrategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      k8s-app: toolbox
+  template:
+    metadata:
+      labels:
+        k8s-app: toolbox
+    spec:
+      containers:
+      - name: toolbox
+        image: luktom/ws
+        command: ["/bin/pause"]
+        resources:
+          limits:
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
