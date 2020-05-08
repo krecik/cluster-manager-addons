@@ -1,0 +1,5 @@
+repoURL: https://github.com/kubecare/cert-manager-issuers-generator.git
+path: .
+values:
+  email: ca@kubecare.com
+  ingressClass: nginx-public

@@ -1,0 +1,35 @@
+repoURL: https://github.com/helm/charts
+path: stable/oauth2-proxy
+values:
+  config:
+    # clientID: "XXXXXXX"
+    # clientSecret: "XXXXXXXX"
+    # Create a new secret with the following command
+    # openssl rand -base64 32 | head -c 32 | base64
+    # Use an existing secret for OAuth2 credentials (see secret.yaml for required fields)
+    # Example:
+    # existingSecret: secret
+    cookieSecret: "SFpxTzkye0F6YlIzdHdaR1dJREw5bXA2RlRnb3JHbkE="
+    configFile: |
+      provider = "oidc"
+      redirect_url = "https://example.corp.com"
+      oidc_issuer_url = "https://corp.okta.com/oauth2/abCd1234"
+      upstreams = [
+          "https://example.corp.com"
+      ]
+      email_domains = [
+          "corp.com"
+      ]
+      client_id = "XXXXX"
+      client_secret = "YYYYY"
+      pass_access_token = true
+      cookie_secret = "ZZZZZ"
+      skip_provider_button = true
+
+  resources:
+    limits:
+      cpu: 100m
+      memory: 300Mi
+    requests:
+      cpu: 100m
+      memory: 300Mi

@@ -1,0 +1,6 @@
+resources:
+# - https://docs.projectcalico.org/manifests/calico.yaml
+- calico.yaml
+patchesStrategicMerge:
+- patch-cidr.yaml
+- patch-ds.yaml
