@@ -51,3 +51,9 @@ overlayDefinitions:
     values:
       tcp:
         1194: "openvpn-server/openvpn-server:1194:PROXY"
+
+  sslPassthrough:
+    values:
+      controller:
+        extraArgs:
+        - --enable-ssl-passthrough
