@@ -56,4 +56,4 @@ overlayDefinitions:
     values:
       controller:
         extraArgs:
-        - --enable-ssl-passthrough
+          enable-ssl-passthrough: ""
