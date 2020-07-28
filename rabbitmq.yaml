@@ -1,5 +1,5 @@
-repoURL: https://github.com/bitnami/charts
-path: bitnami/rabbitmq
+repoURL: https://github.com/helm/charts
+path: stable/rabbitmq
 releaseName: rabbitmq
 values:
   clusterDomain: cluster.local
