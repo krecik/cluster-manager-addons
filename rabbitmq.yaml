@@ -2,13 +2,14 @@ repoURL: https://github.com/helm/charts
 path: stable/rabbitmq
 releaseName: rabbitmq
 values:
-  clusterDomain: cluster.local
-
-  auth:
+  rabbitmq:
     username: user
     password: user
 
-  replicaCount: 1
+  replicas: 1
+
+  persistence:
+    enabled: false
 
   resources:
     limits:
