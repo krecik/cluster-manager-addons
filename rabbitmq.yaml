@@ -5,8 +5,8 @@ values:
   clusterDomain: cluster.local
 
   auth:
-    username: guest
-    password: guest
+    username: user
+    password: user
 
   replicaCount: 1
 
