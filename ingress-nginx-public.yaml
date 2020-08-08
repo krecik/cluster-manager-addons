@@ -6,7 +6,6 @@ values:
     image:
       registry: eu.gcr.io
       repository: k8s-artifacts-prod/ingress-nginx/controller
-      tag: "v0.34.1"
 
     config:
       use-proxy-protocol: "true"
