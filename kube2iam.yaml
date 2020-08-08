@@ -27,6 +27,10 @@ values:
   updateStrategy: RollingUpdate
   priorityClassName: "system-node-critical"
 
+  tolerations:
+  - effect: NoSchedule
+    operator: Exists
+
 overlayDefinitions:
   aws-cni:
     values:
