@@ -1,0 +1,19 @@
+repoURL: https://github.com/argoproj/argo-helm/
+path: charts/argo-cd
+settings:
+  ingressHostname: "argo-workflows.%SETTINGS_dnsSuffix"
+values:
+  server:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx-public
+        kubernetes.io/tls-acme: "true"
+      hosts:
+      - "%SETTINGS_ingressHostname"
+      paths:
+        - /
+      tls:
+        - secretName: argocd-tls
+          hosts:
+          - "%SETTINGS_ingressHostname"
