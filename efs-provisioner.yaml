@@ -11,7 +11,7 @@ values:
   efsProvisioner:
     # If specified, use this DNS or IP to connect the EFS
     # dnsName: "my-custom-efs-dns.com"
-    efsFileSystemId: not-provided
+    # efsFileSystemId: not-provided
     awsRegion: eu-west-1
     path: /
     provisionerName: aws-efs
