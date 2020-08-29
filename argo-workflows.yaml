@@ -11,8 +11,6 @@ values:
         kubernetes.io/tls-acme: "true"
       hosts:
       - "%SETTINGS_ingressHostname"
-      paths:
-        - /
       tls:
         - secretName: argocd-tls
           hosts:
