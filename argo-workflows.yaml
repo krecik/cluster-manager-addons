@@ -1,5 +1,5 @@
 repoURL: https://github.com/argoproj/argo-helm/
-path: charts/argo-cd
+path: charts/argo
 settings:
   ingressHostname: "argo-workflows.%SETTINGS_dnsSuffix"
 values:
