@@ -29,9 +29,3 @@ values:
     ## [Kube Prometheus Selector Label](https://github.com/helm/charts/tree/master/stable/prometheus-operator#exporters)
     selector:
       prometheus: kube-prometheus
-
-overlayDefinitions:
-  china:
-    values:
-      image:
-        repository: gcr.azk8s.cn
