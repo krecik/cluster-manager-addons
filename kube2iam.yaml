@@ -36,3 +36,8 @@ overlayDefinitions:
     values:
       host:
         interface: eni+
+
+  awsCni:
+    values:
+      host:
+        interface: eni+
