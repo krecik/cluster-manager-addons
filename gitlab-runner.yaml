@@ -43,6 +43,7 @@ values:
     requestConcurrency: 1
     tags: "k8s"
     runUntagged: true
+    privileged: true
 
     # builds:
     #   cpuLimit: 200m
