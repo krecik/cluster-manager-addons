@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -55,7 +55,7 @@ spec:
       - args:
         - -conf
         - /etc/coredns/Corefile
-        image: 602401143452.dkr.ecr.eu-west-1.amazonaws.com/eks/coredns:v1.6.6
+        image: 602401143452.dkr.ecr.eu-west-1.amazonaws.com/eks/coredns:v1.8.0-eksbuild.1
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 5
